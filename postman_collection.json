@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "eBay Scrape API Collection",
+    "_postman_id": "e2b00000-0000-0000-0000-000000000000",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Scrape Nike (1 page)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/scrape?query=nike&max_pages=1",
+          "host": ["{{baseUrl}}"],
+          "path": ["scrape"],
+          "query": [
+            { "key": "query", "value": "nike" },
+            { "key": "max_pages", "value": "1" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
