@@ -2,7 +2,7 @@
 
 Scrape listing eBay berdasarkan kata kunci, **ikut pagination** otomatis, ambil **title, price, dan description** (dari halaman detail). **AI (DeepSeek/OpenAI compatible)** dipakai untuk mengekstrak deskripsi ketika struktur halaman tidak stabil. Output **JSON**. Field kosong -> `"-"`.
 
-> ⚠️ Catatan etika: gunakan di lingkungan test/interview. Perhatikan robots.txt dan ToS situs. Rate-limit sudah dipasang ringan + headless browser untuk kestabilan.
+> ⚠️ Catatan etika: gunakan di lingkungan test. Perhatikan robots.txt dan ToS situs. Rate-limit sudah dipasang ringan + headless browser untuk kestabilan.
 
 ## Fitur
 - ✅ JavaScript (Node 18+), Express API
